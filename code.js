@@ -46,7 +46,7 @@ createNewGrid.textContent = 'Create New Grid'
 buttonDiv.appendChild(createNewGrid);
 
 buttonDiv.addEventListener('click', ()=>{
-    let numberOfSquares = +window.prompt('Enter the number of squares per side');
+    let numberOfSquares = +window.prompt('Enter the number of squares');
     if(numberOfSquares && numberOfSquares <= 100){
         divList = [];
         gridContainer.innerHTML = '';
@@ -54,6 +54,6 @@ buttonDiv.addEventListener('click', ()=>{
     }
     if(numberOfSquares > 100)
     {
-        alert('maximum number of squares per side is 100')
+        alert('maximum number of squares is 100')
     }
 });
